@@ -22,6 +22,7 @@ Another example, do not user properties unless you have a good reason
 # Using Slots
 Using `__slots__` can save memory and speed up attribute access by preventing the creation of a default `__dict__` for each instance.
 Downside is you cannot add new attributes dynamically.
+
 ![img_6.png](images/Chapter3_Tricks_of_the_Trade/img_6.png)
 ![img_7.png](images/Chapter3_Tricks_of_the_Trade/img_7.png)
 
