@@ -1,6 +1,6 @@
 # Numpy
-![img_2.png](img_2.png)
-![img.png](img.png)
+![img_2.png](images/Chapter7_beyond_python/img_2.png)
+![img.png](images/Chapter7_beyond_python/img.png)
 First Cell: `2**1000`
 
 This calculation is performed using Python's built-in integers. Python's integers can grow arbitrarily large because they are implemented as arbitrary-precision numbers. Therefore, the result of 2**1000 is displayed correctly as a very large number.
@@ -36,39 +36,39 @@ Here, you are explicitly converting the number 2 to a NumPy int64 type. Unlike P
 In this case, 2**1000 is far larger than the maximum value int64 can handle. The computation overflows and wraps around, eventually resulting in 0.
 
 ## Another example
-![img_1.png](img_1.png)
-![img_3.png](img_3.png)
-![img_4.png](img_4.png)
+![img_1.png](images/Chapter7_beyond_python/img_1.png)
+![img_3.png](images/Chapter7_beyond_python/img_3.png)
+![img_4.png](images/Chapter7_beyond_python/img_4.png)
 
 
 # Numba
-![img_5.png](img_5.png)
-![img_6.png](img_6.png)
-![img_7.png](img_7.png)
-![img_8.png](img_8.png)
-![img_9.png](img_9.png)
+![img_5.png](images/Chapter7_beyond_python/img_5.png)
+![img_6.png](images/Chapter7_beyond_python/img_6.png)
+![img_7.png](images/Chapter7_beyond_python/img_7.png)
+![img_8.png](images/Chapter7_beyond_python/img_8.png)
+![img_9.png](images/Chapter7_beyond_python/img_9.png)
 
 # Cython
-![img_10.png](img_10.png)
-![img_11.png](img_11.png)
+![img_10.png](images/Chapter7_beyond_python/img_10.png)
+![img_11.png](images/Chapter7_beyond_python/img_11.png)
 notice the cython version code difference
-![img_12.png](img_12.png)
-![img_13.png](img_13.png)
+![img_12.png](images/Chapter7_beyond_python/img_12.png)
+![img_13.png](images/Chapter7_beyond_python/img_13.png)
 compile once code ready
-![img_14.png](img_14.png)
-![img_15.png](img_15.png)
-![img_17.png](img_17.png)
-![img_16.png](img_16.png)
+![img_14.png](images/Chapter7_beyond_python/img_14.png)
+![img_15.png](images/Chapter7_beyond_python/img_15.png)
+![img_17.png](images/Chapter7_beyond_python/img_17.png)
+![img_16.png](images/Chapter7_beyond_python/img_16.png)
 Be aware that Cython may not always outperform pure Python, especially for small or simple functions where the overhead of compilation and type declarations may outweigh the benefits.
 Besides, Cython adds complexity to the development process, as it requires an additional compilation step and may introduce compatibility issues with pure Python code.
 If your platform changes, the Cython-compiled modules may need to be recompiled to ensure compatibility.
 
 # PyPy
-![img_18.png](img_18.png)
+![img_18.png](images/Chapter7_beyond_python/img_18.png)
 pypy is ~4x faster than cpython in this case
-![img_20.png](img_20.png)
-![img_21.png](img_21.png)
-![img_19.png](img_19.png)
+![img_20.png](images/Chapter7_beyond_python/img_20.png)
+![img_21.png](images/Chapter7_beyond_python/img_21.png)
+![img_19.png](images/Chapter7_beyond_python/img_19.png)
 ## When is pypy faster than cpython?
 - Long-running applications: PyPy's JIT compiler optimizes code during execution, making it more effective for applications that run for extended periods, such as web servers or data processing pipelines.
 - Loop-intensive tasks: PyPy excels at optimizing loops and repetitive computations, making it ideal for numerical simulations, data processing, and other tasks that involve extensive looping.
@@ -118,9 +118,9 @@ PyPy can significantly improve performance for certain use cases, particularly l
 
 
 # C Extensions
-![img_22.png](img_22.png)
-![img_23.png](img_23.png)
-![img_24.png](img_24.png)
-![img_25.png](img_25.png)
+![img_22.png](images/Chapter7_beyond_python/img_22.png)
+![img_23.png](images/Chapter7_beyond_python/img_23.png)
+![img_24.png](images/Chapter7_beyond_python/img_24.png)
+![img_25.png](images/Chapter7_beyond_python/img_25.png)
 in this case, ~7x faster
-![img_26.png](img_26.png)
+![img_26.png](images/Chapter7_beyond_python/img_26.png)

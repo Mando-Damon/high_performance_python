@@ -1,13 +1,13 @@
 # Big O Notation
-![img.png](img.png)
-![img_1.png](img_1.png)
-![img_2.png](img_2.png)
+![img.png](images/Chapter2_Picking_right_data_structure/img.png)
+![img_1.png](images/Chapter2_Picking_right_data_structure/img_1.png)
+![img_2.png](images/Chapter2_Picking_right_data_structure/img_2.png)
 
 # bisect (log(n))
-![img_3.png](img_3.png)
+![img_3.png](images/Chapter2_Picking_right_data_structure/img_3.png)
 
 # deque
-![img_4.png](img_4.png)
+![img_4.png](images/Chapter2_Picking_right_data_structure/img_4.png)
 ## Scenarios for Using deque
 
 ### 1. If you need to maintain a sliding window or the most recent N records:  
@@ -41,7 +41,7 @@ lifo_stack.append(item)  # Push item to stack
 item = lifo_stack.pop()  # Pop item from stack  
 
 # heapq
-![img_5.png](img_5.png)
+![img_5.png](images/Chapter2_Picking_right_data_structure/img_5.png)
 
 ```python
 import heapq
